@@ -6,6 +6,7 @@ typedef struct {
     Shape shape_objects[1000];
     float universal_gravitational_constant;
     float universal_gravitational_contant_exp;
+    int display[1000][1000];
 } World;
 
 void add_shape_to_world(World* world, const Shape* shape) {
