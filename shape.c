@@ -45,19 +45,3 @@ void print_shape(const Shape* s) {
             break;
     }
 }
-
-int main() {
-    // Create and initialize a square shape
-    Shape square;
-    square.type = SHAPE_SQUARE;
-    square.dimensions[0] = 5.0f;  // side length
-    square.position.x = 10.0f;
-    square.position.y = 20.0f;
-    square.rotation = 45.0f;
-    square.is_physics_on = true;
-
-    // Print the shape's information
-    print_shape(&square);
-
-    return 0;
-}
