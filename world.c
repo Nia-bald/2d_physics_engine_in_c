@@ -20,7 +20,10 @@ void main() {
         .dimensions = {5.0f},
         .position = {10.0f, 20.0f},
         .rotation = 45.0f,
-        .is_physics_on = true
+        .is_physics_on = true,
+        .velocity = {0.0f, 0.0f}, // Optional, can be initialized if needed
+        .acceleration = {0.0f, 0.0f}, // Optional, can be initialized if needed
+        .mass = 10.0f // Optional, can be initialized if needed
     };
 
     Shape shape2 = {
@@ -28,7 +31,10 @@ void main() {
         .dimensions = {5.0f},
         .position = {10.0f, 20.0f},
         .rotation = 45.0f,
-        .is_physics_on = true
+        .is_physics_on = true,
+        .velocity = {0.0f, 0.0f}, // Optional, can be initialized if needed
+        .acceleration = {0.0f, 0.0f}, // Optional, can be initialized if needed
+        .mass = 10.0f // Optional, can be initialized if needed
     };
 
     World world1 = {

@@ -15,6 +15,16 @@ typedef struct {
     float y;
 } Position;
 
+typedef struct {
+    float x;
+    float y;
+} Velocity;
+
+typedef struct {
+    float x;
+    float y;
+} Acceleration;
+
 // Structure that simulates a "Shape class"
 typedef struct {
     ShapeType type;
@@ -22,6 +32,9 @@ typedef struct {
     Position position;
     float rotation;
     bool is_physics_on;
+    Velocity velocity; // velocity in x and y directions
+    Acceleration acceleration; // acceleration in x and y directions
+    float mass; // mass of the shape, if needed
 } Shape;
 
 // Function to print shape info
